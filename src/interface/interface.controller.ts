@@ -1,4 +1,9 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from "@nestjs/common";
 
-@Controller('interface')
-export class InterfaceController {}
+@Controller("")
+export class InterfaceController {
+  @Get("/dashboard")
+  displayDashboard() {
+    console.log("Yalaa");
+  }
+}
